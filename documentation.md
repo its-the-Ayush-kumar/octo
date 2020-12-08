@@ -15,7 +15,7 @@ server address: https://gentle-peak-88297.herokuapp.com/
 ### 1. USER
 
   1. signup
-   * route: /user/signup (POST)
+  * route: /user/signup (POST)
   * parameters: userName (optional), userEmail, userPassword
 
   2. signin
