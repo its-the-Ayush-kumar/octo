@@ -10,48 +10,48 @@ server address: https://gentle-peak-88297.herokuapp.com/
 
 ..............................................
 
-APIs
+## APIs
 
-----> USER
+1### USER
 
---------> signup
-------------> route: /user/signup (POST)
-------------> parameters: userName (optional), userEmail, userPassword
+1 signup
+* route: /user/signup (POST)
+* parameters: userName (optional), userEmail, userPassword
 
---------> signin
-------------> route: /user/signin (POST)
-------------> parameters: userEmail, userPassword
+2 signin
+* route: /user/signin (POST)
+* parameters: userEmail, userPassword
 
---------> signout
-------------> route: /user/signout (POST)
-------------> parameters: userEmail
+3 signout
+* route: /user/signout (POST)
+* parameters: userEmail
 
---------> delete
-------------> route: /user/delete (DELETE)
-------------> parameters: userEmail, userPassword
-
-
-----> EVENT
-
---------> create
-------------> route: /event/create (POST)
-------------> parameters: eventName, eventDate, eventLocation, allowedAttendeesCount
-
---------> list
-------------> route: /event/list (GET)
-------------> parameters: date
-
---------> delete
-------------> route: /event/delete (DELETE)
-------------> parameters: eventId
+4 delete
+* route: /user/delete (DELETE)
+* parameters: userEmail, userPassword
 
 
-----> TASK
+2### EVENT
 
---------> goto event
-------------> route: /task/gotoEvent (POST)
-------------> parameters: userId, eventId
+1 create
+* route: /event/create (POST)
+* parameters: eventName, eventDate, eventLocation, allowedAttendeesCount
 
---------> attendees of an event
-------------> route: /task/attendees (GET)
-------------> parameters: eventId
+2 list
+* route: /event/list (GET)
+* parameters: date
+
+3 delete
+* route: /event/delete (DELETE)
+* parameters: eventId
+
+
+3### TASK
+
+1 goto event
+* route: /task/gotoEvent (POST)
+* parameters: userId, eventId
+
+2 attendees of an event
+* route: /task/attendees (GET)
+* parameters: eventId
