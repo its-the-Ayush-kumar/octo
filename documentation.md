@@ -12,7 +12,7 @@ server address: https://gentle-peak-88297.herokuapp.com/
 
 ## APIs
 
-1### USER
+### 1. USER
 
 1 signup
 * route: /user/signup (POST)
@@ -31,7 +31,7 @@ server address: https://gentle-peak-88297.herokuapp.com/
 * parameters: userEmail, userPassword
 
 
-2### EVENT
+### 2. EVENT
 
 1 create
 * route: /event/create (POST)
@@ -46,7 +46,7 @@ server address: https://gentle-peak-88297.herokuapp.com/
 * parameters: eventId
 
 
-3### TASK
+### 3. TASK
 
 1 goto event
 * route: /task/gotoEvent (POST)
